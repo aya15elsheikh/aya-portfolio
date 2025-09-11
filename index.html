@@ -5,240 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aya Mohamed Elsheikh - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2e0b5b6d2.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: #0d0d2b;
-            color: white;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: #00e6e6;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 3rem;
-            background: #141438;
-        }
-
-        .logo {
-            font-weight: 900;
-            background: #00e6e6;
-            color: #141438;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav ul li a {
-            font-weight: 600;
-            color: white;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #00e6e6;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        body {
-            padding-top: 80px;
-        }
-
-
-        .btn-cta {
-            background: #00e6e6;
-            color: #141438;
-            padding: 0.6rem 1.5rem;
-            border-radius: 4px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
-
-        .btn-cta:hover {
-            background: #00caca;
-        }
-
-        section {
-            padding: 4rem 3rem;
-        }
-
-        h1,
-        h2,
-        h3 {
-            margin-bottom: 1rem;
-            font-weight: 900;
-        }
-
-        h1 span {
-            display: block;
-        }
-
-        .highlight {
-            color: #00e6e6;
-        }
-
-        /* Hero */
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .hero-text {
-            max-width: 50%;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            line-height: 1.2;
-        }
-
-        .hero-text p {
-            margin-top: 1rem;
-            max-width: 500px;
-            color: #aaa;
-        }
-
-        .hero-img {
-            max-width: 40%;
-            position: relative;
-        }
-
-        .hero-img img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .hero-img::before {
-            content: '';
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            width: 100%;
-            height: 100%;
-            /* border: 8px solid #00e6e6; */
-            border-radius: 8px;
-            z-index: -1;
-        }
-
-        /* About */
-        .about {
-            background: #141438;
-            border-radius: 8px;
-            padding: 2rem;
-        }
-
-        /* Skills */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .skill {
-            background: #1c1c3c;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        /* Projects */
-        .projects {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .project {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            background: #141438;
-            padding: 2rem;
-            border-radius: 8px;
-        }
-
-        .project img {
-            width: 300px;
-            border-radius: 8px;
-        }
-
-        .project-details h3 {
-            color: #00e6e6;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Timeline */
-        .timeline {
-            border-left: 3px solid #00e6e6;
-            margin-left: 1rem;
-            padding-left: 1.5rem;
-        }
-
-        .timeline-item {
-            margin-bottom: 2rem;
-        }
-
-        .timeline-item h4 {
-            margin-bottom: 0.3rem;
-            color: #00e6e6;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #141438;
-        }
-
-        footer .socials a {
-            margin: 0 1rem;
-            font-size: 1.5rem;
-        }
-
-        @media (max-width: 900px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-text,
-            .hero-img {
-                max-width: 100%;
-            }
-
-            .project {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -248,10 +18,10 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <a href="#contact" class="btn-cta">Contact</a>
@@ -267,17 +37,26 @@
             <p>Computer Science student specializing in Backend Development & Penetration Testing. Skilled in building
                 secure APIs, working with databases, and identifying vulnerabilities.</p>
         </div>
+        <div class="hero-img">
+            <img src="assets/img/profile.jpg" alt="Aya Elsheikh" width="350" height="350">
+        </div>
     </section>
     <br>
     <br>
-    <br>
-    <br>
+
     <!-- About -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I'm a backend-focused software engineer with hands-on experience in Laravel, Spring Boot, Docker,<br>
-            and security testing tools like Burp Suite and FFUF.<br> Passionate about secure API development, system
-            architecture, and vulnerability assessment.</p>
+        <p>
+            In my journey as a software engineer, I’ve often found myself in situations where backend
+            systems needed both performance and security.<br> My task was not only to build reliable APIs
+            but also to ensure they could withstand real-world threats.<br>
+            To achieve this, I applied my skills in <strong>Laravel</strong>, <strong>Spring Boot</strong>, and
+            containerization with <strong>Docker</strong>, while strengthening applications through
+            <strong>security testing tools</strong> such as Burp Suite and FFUF.<br>
+            As a result, I’ve successfully delivered backend solutions that are scalable, secure,
+            and trusted by end users.
+        </p>
     </section>
 
 
@@ -291,7 +70,7 @@
             </div>
             <div class="timeline-item">
                 <h4>Digital Egyptian Pioneers initiative – Penetration Testing </h4>
-                <p>2024</p>
+                <p>2025</p>
             </div>
 
             <div class="timeline-item">
@@ -308,20 +87,28 @@
         <div class="timeline">
             <div class="timeline-item">
                 <h4>Backend Engineer Intern - Dayra</h4>
+                <h5>
+                    Contributed to backend services using Laravel and MySQL.
+                </h5>
                 <p>07/2025 – Present | Cairo</p>
             </div>
             <div class="timeline-item">
                 <h4>Information Technology Trainee - GUPCO</h4>
+                <h5> Explore real-world IT infrastructure, applications (.NET & APEX) and security operations to gain
+                    hands-on exposure</h5>
                 <p>07/2025</p>
             </div>
             <div class="timeline-item">
                 <h4>C++ Intern - NeuronetiX</h4>
                 <p>08/2024 – 10/2024</p>
+                <h5> Collaborated on various C++ projects</h5>
             </div>
 
             <div class="timeline-item">
                 <h4>Information Technology Trainee - GANOPE</h4>
                 <p>07/2024</p>
+                <h5> Engaged with SAP ERP systems and IT infrastructure operations, gaining insight into enterprise
+                    resource planning and backend system management</h5>
             </div>
         </div>
     </section>
@@ -374,6 +161,17 @@
         <h2>Projects</h2>
         <div class="projects">
             <div class="project">
+                <img src="assets/img/pps.jpeg" alt="PPS" width="200" height="200">
+                <div class="project-details">
+                    <h3>Pixels Profiling System</h3>
+                    <p>
+                        Developed and contributed to a secure backend system for Pixels SA,
+                        focusing on scalable architecture and API Development.
+                    </p>
+                    <p><strong>Technologies:</strong> Laravel, MySQL, REST APIs</p>
+                </div>
+            </div>
+            <div class="project">
                 <img src="assets/img/event-booking.png" alt="Event Booking">
                 <div class="project-details">
                     <h3>Event Booking System</h3>
@@ -416,6 +214,29 @@
 
     </section>
 
+    <!-- Achievements -->
+    <section id="achievements" class="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Built and deployed Restaurant and event booking system with Laravel.</li>
+            <li>Led a backend team to deliver APIs serving requests efficiently.</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"I’m honestly so proud of you
+                Throughout the whole season you’ve been so patient, practical, and reliable always there to push
+                things
+                forward no matter how tough it got.
+                You really made a difference , and I’m grateful for everything you contributed"</p>
+            <cite>– Project Partner</cite>
+        </blockquote>
+        <br><br>
+    </section>
+
     <!-- Contact -->
     <section id="contact" style="text-align:center; padding:50px 20px;">
         <h2>Contact Me</h2>
@@ -431,20 +252,12 @@
                 <img src="assets/icons/github.svg" alt="GitHub" width="40" style="display:inline;">
 
             </a>
-            <!-- <a href="tel:+201093529604" style="margin:0 15px;">
-                <img src="assets/icons/phone.svg" alt="Phone" width="40">
-            </a> -->
         </div>
     </section>
 
 
     <!-- Footer -->
     <footer>
-        <div class="socials">
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-            <a href="https://wa.me/01093529604"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        </div>
         <p>© 2025 Aya Elsheikh</p>
     </footer>
 
